@@ -1,1 +1,5 @@
-echo "-- Start by comments" | cat - /tmp/correction/5125994007846912038057979906679528902846_5/2088/532101/SQL_more_queries/0-privileges.sql > /tmp/correction/5125994007846912038057979906679528902846_5/2088/532101/SQL_more_queries/tempfile && mv /tmp/correction/5125994007846912038057979906679528902846_5/2088/532101/SQL_more_queries/tempfile /tmp/correction/5125994007846912038057979906679528902846_5/2088/532101/SQL_more_queries/0-privileges.sql
+-- List privileges for user_0d_1
+SHOW GRANTS FOR 'user_0d_1'@'localhost';
+
+-- List privileges for user_0d_2
+SHOW GRANTS FOR 'user_0d_2'@'localhost';
