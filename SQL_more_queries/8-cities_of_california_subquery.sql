@@ -1,5 +1,14 @@
-SELECT * FROM cities
+-- Selects all cities from the cities table
+SELECT * 
+FROM cities
+
+-- Filters cities where the state_id matches the id of California in the states table
 WHERE state_id = (
-    SELECT id FROM states WHERE name = 'California'
+    -- Subquery to get the id of the state named 'California'
+    SELECT id 
+    FROM states 
+    WHERE name = 'California'
 )
+
+-- Orders the results in ascending order by the id of the cities
 ORDER BY id ASC;
