@@ -1,5 +1,5 @@
--- Selects all cities from the cities table
-SELECT * 
+-- Selects id and name columns from the cities table
+SELECT id, name
 FROM cities
 
 -- Filters cities where the state_id matches the id of California in the states table
